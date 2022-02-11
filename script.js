@@ -78,4 +78,14 @@ window.onload = () => {
   searchProduct('computador');
 };
 
+const clear = document.querySelector('.empty-cart');
+function eraseItems() {
+  const eraseList = document.querySelector('.cart__items');
+  eraseList.innerHTML = '';
+}
+ clear.addEventListener('click', eraseItems);
+
 // Recebi ajuda do Igor Souza :) 
+// Recebi ajuda de um 1:1 incrivel com o embaixa Pondaco
+// que me ajudou muito na parte lógica.
+// E claro, todas as mentorias da semana ontrack
